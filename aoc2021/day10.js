@@ -9,13 +9,11 @@ function prepareData(dataString) {
 
 let open = new Set(['[', '(', '{', '<']);
 
-function mapChar(openChar) {
-    switch (openChar) {
-        case '[': return ']';
-        case '(': return ')';
-        case '{': return '}';
-        case '<': return '>';
-    }
+const mapChar = {
+    '[':  ']',
+    '(':  ')',
+    '{':  '}',
+    '<':  '>'
 }
 
 function isCorrupted(line) {
@@ -25,7 +23,7 @@ function isCorrupted(line) {
         if (open.has(current)) {
             stack.push(current);
         } else {
-            let expected = mapChar(stack.pop());
+            let expected = mapChar[stack.pop()];
             if (current != expected) {
                 return { corrupted: true, symbol: current };
             }
