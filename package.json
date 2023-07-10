@@ -1,0 +1,19 @@
+{
+  "name": "algorithmic-tasks",
+  "version": "1.0.0",
+  "description": "https://adventofcode.com/2021",
+  "main": "index.js",
+  "scripts": {
+    "lc": "node run.js leetcode"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recr0ns/algorithmic-tasks.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/recr0ns/algorithmic-tasks/issues"
+  },
+  "homepage": "https://github.com/recr0ns/algorithmic-tasks#readme"
+}
